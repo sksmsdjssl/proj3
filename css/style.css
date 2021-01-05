@@ -1,0 +1,176 @@
+#wrap{}
+#header{}
+#section{}
+#footer{}
+
+/*********************header****************************/
+*{margin:0;padding:0}
+html{font-size:15px; font-family: Nanumsquare;}
+body{color:#777;padding-bottom:300px;}
+ul, li{list-style: none;}
+.inner{width:980px;margin:0 auto}
+a{text-decoration: none;color:inherit}
+
+/*공통디자인*/
+#logo
+nav {margin-bottom: 55px;}
+nav .inner{position: relative;}
+nav .depth1 {position:absolute;width:100%;top:50px;left:0;}
+nav .depth1 > li {width:20%;float:left;}
+nav .depth1 > li > a {display: block;
+     text-align: center;font-size:1rem;color:#333;
+     font-weight: bold;
+     padding-top:5px;padding-bottom:5px}
+
+/* 네비1 */          
+#nav1 .depth1{z-index:99}
+#nav1 .depth1 ul{border-left:1px solid #ccc;
+             border-right:1px solid #ccc;
+             border-bottom:1px solid #ccc;
+             height:0;overflow: hidden;
+             opacity: 0;
+             transition: 0.5s;
+             background-color:#fff;
+             padding:10px;
+             box-sizing: border-box;}
+#nav1 .depth1>li:hover ul{height:300px;opacity: 1;}
+
+/*슬라이드*/
+#slider-wrapper {
+    width: 1920px;
+    height: 879px;
+
+    position: relative;
+    margin-bottom: 0px;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  
+  #s1 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s2 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: -12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s3 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 12px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s4 {
+    padding: 6px;
+    background: #000000;
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    margin-left: 36px;
+    border-radius: 20px;
+    opacity: 0.3;
+    cursor: pointer;
+    z-index: 999;
+  }
+  
+  #s1:hover,
+  #s2:hover,
+  #s3:hover,
+  #s4:hover {
+    opacity: .50;
+  }
+  
+  .inner-wrapper {
+    width: 1920px;
+    height: 879px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-bottom: 0px;
+    overflow: hidden;
+  }
+  
+  .control {
+    display: none;
+  }
+  
+  #Slide1:checked ~ .overflow-wrapper {
+    margin-left: 0%;
+  }
+  
+  #Slide2:checked ~ .overflow-wrapper {
+    margin-left: -100%;
+  }
+  
+  #Slide3:checked ~ .overflow-wrapper {
+    margin-left: -200%;
+  }
+  
+  #Slide4:checked ~ .overflow-wrapper {
+    margin-left: -300%;
+  }
+  
+  #Slide1:checked + #s1 {
+    opacity: 1;
+  }
+  
+  #Slide2:checked + #s2 {
+    opacity: 1;
+  }
+  
+  #Slide3:checked + #s3 {
+    opacity: 1;
+  }
+  
+  #Slide4:checked + #s4 {
+    opacity: 1;
+  }
+  
+  .overflow-wrapper {
+    width: 400%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: hidden;
+    z-index: 1;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .slide img {
+    width: 25%;
+    float: left;
+  }
+
+/*********************section****************************/
+
+
+/*********************footer****************************/
