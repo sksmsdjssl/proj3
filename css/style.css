@@ -6,9 +6,8 @@
 /*********************header****************************/
 *{margin:0;padding:0}
 html{font-size:15px; font-family: Nanumsquare;}
-body{color:#777;padding-bottom:300px;}
-ul, li{list-style: none;}
-.inner{width:980px;margin:0 auto}
+body{color:#777;}
+.inner{width: 1349px; margin:0 auto}
 a{text-decoration: none;color:inherit}
 
 /*공통디자인*/
@@ -24,6 +23,7 @@ nav .depth1 > li > a {display: block;
 
 /* 네비1 */          
 #nav1 .depth1{z-index:99}
+#nav1 .depth1 ul, li{list-style-type: none;}
 #nav1 .depth1 ul{border-left:1px solid #ccc;
              border-right:1px solid #ccc;
              border-bottom:1px solid #ccc;
@@ -41,7 +41,7 @@ nav .depth1 > li > a {display: block;
     height: 879px;
 
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 95px;
     background: rgba(0, 0, 0, 0.5);
     overflow: hidden;
   }
@@ -169,6 +169,63 @@ nav .depth1 > li > a {display: block;
     width: 25%;
     float: left;
   }
+
+ /* COMPANY */
+
+#company{}
+#company h1{
+  color: #000000;
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+  font-weight: ExtraBold;
+}
+#company .orion{
+  color: #000000;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 92px;
+}
+
+#company > div{
+  width: 1349px;
+  height: 541px;
+  margin: 0 auto;
+  color: #000000;
+}
+#company > ul{
+  display: block;
+  height: 198px; width: 394px;
+
+}
+#company > ul, li {
+  font-size: 50px;
+  margin-top: 118px;
+  float: left;
+}
+
+#company ul li p {font-size: 20px;}
+
+/* brandstory */
+
+#brands {color: #000000;}
+
+#brands ul > li {
+  font-size: 16px;
+  float: left;
+}
+#brands ul > h1 {
+  font-size: 50px;
+  font-weight: ExtraBold;
+}
+#brands ul > li > span {
+  font-size: 35px;
+}
+
+#brt{
+  font-size: 20;
+}
+
 
 /*********************section****************************/
 
